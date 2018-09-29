@@ -25,13 +25,11 @@ CGFloat kHeartSizeHeight = 100.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.heartView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.width.equalTo(@(kHeartSizeWidth));
         make.height.equalTo(@(kHeartSizeHeight));
     }];
-    
     [self addBreathAnimation];
 }
 
